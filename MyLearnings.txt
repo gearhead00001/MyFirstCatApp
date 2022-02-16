@@ -1,0 +1,23 @@
+What is git?
+Concepts of git 
+Basic commands
+Installing git 
+touch (command) 
+git init(command) 
+git add (command)
+git status(command) 
+git rm - -cached(command) 
+git add *.html (command)
+git add .(command) 
+git commit(command) 
+git commit -m '   ' (command) 
+.gitignore (documentation)
+git branch(command) 
+git checkout(command) 
+git merge(command)
+GitHub new repository
+git remote(command) - 27:46
+git remote add origin(command) - 27:54
+git push -u origin master(command) - 28:07
+git clone(command) - 31:00
+git pull(command) - 31:33
