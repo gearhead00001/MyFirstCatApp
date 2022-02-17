@@ -184,6 +184,7 @@ export default class Addtaskhome extends Component{
   }
 
   addTasks = () => {
+    store.dispatch({type:"UIColors",payload:{cat_black: "red",cat_yellow :"blue"}})
     let currentDate = new Date;
     let month = ((currentDate.getMonth()+1)>9)?""+(currentDate.getMonth()+1):"0"+(currentDate.getMonth()+1);
     let creationVal = currentDate.getFullYear()+"-"+ month +"-"+currentDate.getDate();
