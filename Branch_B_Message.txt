@@ -1,1 +1,1 @@
-Hello these changes to all files is done in BranchA.
+Hello. This message is created in Branch-B.
