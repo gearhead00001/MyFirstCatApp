@@ -5,18 +5,21 @@ import Addtaskhome from './Addtaskhome';
 import { Pendingtask } from './Pendingtask';
 import { Completedtask } from './Completedtask';
 import {store} from "../store/store";
+import  {Provider} from 'react-redux';
 
 const Stack = createNativeStackNavigator();
 
 export const App = () =>{
   return(
-    <NavigationContainer>
-      <Stack.Navigator initialRouteName="Addtaskhome" screenOptions={{ headerShown: false }}>
-        <Stack.Screen name="Addtaskhome" component = {Addtaskhome} />
-        <Stack.Screen name="Pendingtask" component = {Pendingtask} />
-        <Stack.Screen name="Completedtask" component = {Completedtask} />
-      </Stack.Navigator>
-   </NavigationContainer>
+    <Provider store = {store}>
+      <NavigationContainer>
+        <Stack.Navigator initialRouteName="Addtaskhome" screenOptions={{ headerShown: false }}>
+          <Stack.Screen name="Addtaskhome" component = {Addtaskhome} />
+          <Stack.Screen name="Pendingtask" component = {Pendingtask} />
+          <Stack.Screen name="Completedtask" component = {Completedtask} />
+        </Stack.Navigator>
+    </NavigationContainer>
+   </Provider>
   );
 }
 
